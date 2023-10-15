@@ -1,0 +1,92 @@
+<div class="intoro">
+<h5>診断結果</h5>
+<p>あなたにおすすめの香りは…</p>
+</div>
+<div class="tweet-container">
+    <div class="tweet">
+        <% if @song.question == "111" %>
+        <h6>夜に駆ける/YOASOBI</h6>
+        <p>他にも…</p>
+        <p>高嶺の花子さん/backnumber</p>
+
+        <% elsif @song.question == "112" %>
+        <h6>さくらんぼ/大塚愛</h6>
+        <p>他にも…</p>
+        <p>R.Y.U.S.E.I./三代目JSOULBROTHERS</p>
+        <p>さよならエレジー/菅田将暉</p>
+
+        <% elsif @song.question == "121" %>
+        <h6>浪漫飛行/米米ＣＬＵＢ</h6>
+        <p>他にも…</p>
+        <p>硝子の少年/KinKi Kids</p>
+
+        <% elsif @song.question == "122" %>
+        <h6>シーソーゲーム/Mr.Children</h6>
+        <p>他にも…</p>
+        <p>それが大事/大事MANブラザーズバンド</p>
+
+
+        <% elsif @song.question == "131" %>
+        <h6>小さな恋のうた/MONGOL800</h6>
+        <p>他にも…</p>
+        <p>DIAMOND/PRINCESS PRINCESS</p>
+
+        <% elsif @song.question == "132" %>
+        <h6>Love so sweet/嵐</h6>
+        <p>他にも…</p>
+        <p>恋/星野源</p>
+
+        <% elsif @song.question == "141" %>
+        <h6>CHE.R.RY/YUI</h6>
+        <p>他にも…</p>
+        <p>White Love/SPEED</p>
+
+        <% elsif @song.question == "142" %>
+        <h6>青い珊瑚礁/松田聖子</h6>
+        <p>他にも…</p>
+        <p>そばかす/JUDY AND MARY</p
+
+        <% elsif @song.question == "211" %>
+        <h6>ドライフラワー/優里</h6>
+        <p>他にも…</p>
+        <p>炎/LISA、カブトムシ/aiko</p>
+
+        <% elsif @song.question == "212" %>
+        <h6>猫/DISH//</h6>
+        <p>他にも…</p>
+        <p>マリーゴールド/あいみょん、香水/瑛人</p>
+
+        <% elsif @song.question == "221" %>
+        <h6>栄光の架け橋/ゆず</h6>
+        <p>他にも…</p>
+        <p>I LOVE YOU/尾崎豊、いとしのエリー/サザンオールスターズ</p>
+
+        <% elsif @song.question == "222" %>
+        <h6>チェリー/スピッツ</h6>
+        <p>他にも…</p>
+        <p>粉雪/レミオロメン、世界中の誰よりきっと/中山美穂&WANDS</p>
+
+        <% elsif @song.question == "231" %>
+        <h6>ひまわりの約束/秦基博</h6>
+        <p>他にも…</p>
+        <p>ずっと好きだった/斉藤和義、愛をこめて花束を/Superfly</p>
+
+        <% elsif @song.question == "232" %>
+        <h6>花/ORENGE RANGE</h6>
+        <p>他にも…</p>
+        <p>チェリー/スピッツ</p>
+
+        <% elsif @song.question == "241" %>
+        <h6>未来予想図Ⅱ/DREAMS COME TRUE</h6>
+        <p>他にも…</p>
+        <p>カブトムシ/aiko</p>
+
+        <% elsif @song.question == "242" %>
+        <h6>366日/HY</h6>
+        <p>他にも…</p>
+        <p>やさしさに包まれたなら/松任谷由実</p>
+
+    <% end %>
+    <%= link_to "トップに戻る", songs_path %>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="top">
+
+
+<p><%= link_to "診断へ", new_song_path %></p>
+<p><%= link_to "診断2へ", new_cat_path %></p>
+<p><% if user_signed_in? %>
+<%= link_to "マイページへ", user_path(current_user.id) %></p>
+
+<% end %>
+
+</div>

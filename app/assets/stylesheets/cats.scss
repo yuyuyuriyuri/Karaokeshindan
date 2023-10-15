@@ -1,0 +1,40 @@
+// Place all the styles related to the cats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.col-4{
+    background-color: rgb(17, 224, 247);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    text-align: center;
+    //margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 70px;
+  }
+  
+  .col-11{
+    color: white; 
+    padding-bottom: 20px;
+    font-size: 25px;
+  }
+  
+  .col-8{
+    color: white; 
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .col-5{
+    text-align: center;
+    padding: 60px;
+  }
+  
+  .sindanbotan{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  h6{
+    font-size:30px;
+  }
+  

@@ -1,0 +1,106 @@
+<div class="intoro">
+            <h5>診断結果</h5>
+            <p>あなたにおすすめの楽曲は…</p>
+        </div>
+        <div class="cat-container">
+            <div class="cat">
+                <% if @cat.question == "1111" %>
+                <h6>残酷な天使のテーゼ/高橋洋子、サクランボ/大塚愛</h6>
+                <p>リズム感が重要！思い切って歌おう！</p>
+                <%= link_to "残酷な天使のテーゼ", cats_teeze_path %>
+
+                <% elsif @cat.question == "1112" %>
+                <h6>丸の内サディスティック/椎名林檎</h6>
+                <p>リズム感が重要！</p>
+
+                <% elsif @cat.question == "1121" %>
+                <h6>カブトムシ/aiko</h6>
+                <p>気持ちを込めて歌おう！</p>
+               
+                <% elsif @cat.question == "1122" %>
+                <h6>マリーゴールド/あいみょん、愛唄/GReeeeN</h6>
+                <p>音程をしっかり取るように歌おう！</p>
+
+                <% elsif @cat.question == "1211" %>
+                <h6>恋/星野源、小さな恋のうた/MONGOL800</h6>
+                <p>リズム感が重要！</p>
+
+                <% elsif @cat.question == "1212" %>
+                <h6>さよならエレジー/菅田将暉、RPG/SEKAI NO OWARI</h6>
+                <p>音程をしっかり取るように歌おう！</p>
+
+                <% elsif @cat.question == "1221" %>
+                <h6>Lemon/米津玄師</h6>
+                <p>気持ち込めて歌ってみよう！</p>
+
+                <% elsif @cat.question == "1222" %>
+                <h6>花/ORENGE RANGE、Love so sweet/嵐</h6>
+                <p>音程をしっかりとって歌おう！</p>
+
+                <% elsif @cat.question == "1311" %>
+                <h6>青と夏/Mrs.GREEN APPLE、怪獣の花唄/Vaundy</h6>
+                <p>思い切って歌っちゃおう！</p>
+
+                <% elsif @cat.question == "1312" %>
+                <h6>高嶺の花子さん/backnumber</h6>
+                <p>リズム感が重要！</p>
+
+                <% elsif @cat.question == "1321" %>
+                <h6>ひまわりの約束/秦基博、ハナミズキ/一青窈</h6>
+                <p>リズムをしっかりとって、気持ちを込めて歌うことが重要！</p>
+
+                <% elsif @cat.question == "1322" %>
+                <h6>チェリー/スピッツ、猫/DISH//</h6>
+                <p>音程を取ることが重要！</p>
+
+                <% elsif @cat.question == "2111" %>
+                <h6>新時代/Ado</h6>
+                <p>思い切って歌っちゃおう！</p>
+               
+                <% elsif @cat.question == "2112" %>
+                <h6>ミックスナッツ/Official髭男dism</h6>
+                <p>リズム感を掴むことが重要！</p>
+                
+                <% elsif @cat.question == "2121" %>
+                <h6>サマータイムシンデレラ/緑黄色社会、シンデレラボーイ/SaucyDog</h6>
+                <p>リズムをつかめれば気持ちよく歌えるはず！</p>
+
+                <% elsif @cat.question == "2122" %>
+                <h6>愛の花/あいみょん</h6>
+                <p>しっかりリズムを掴むように歌うと歌えるはず！</p>
+            
+                <% elsif @cat.question == "2211" %>
+                <h6>アイドル/YOASOBI、オトナブルー/新しい学校のリーダーズ</h6>
+                <p>リズム感と表現力が重要！テンポが早いですがあなたなら歌えるはず！</p>
+
+                <% elsif @cat.question == "2212" %>
+                <h6>habit/SEKAI NO OWARI</h6>
+                <pリズム感が重要！テンポが早いですがあなたなら歌えるはず！</p>
+
+                <% elsif @cat.question == "2221" %>
+                <h6>死ぬのがいいわ/藤井風</h6>
+                <p>表現力が重要！</p>
+        
+                <% elsif @cat.question == "2222" %>
+                <h6>カナタハルカ/RADWINPS、本当はね、/ヤングスキニー</h6>
+                <p>テンポがゆっくりなので歌いやすいです！</p>
+
+                <% elsif @cat.question == "2311" %>
+                <h6>美しい鰭/スピッツ</h6>
+                <p>リズム感が重要！</p>
+
+                <% elsif @cat.question == "2312" %>
+                <h6>ケセラセラ/Mrs.GREEN APPLE</h6>
+                <p>音が高いですがリズムが取れればあなたなら歌えるはず！</p>
+
+                <% elsif @cat.question == "2321" %>
+                <h6>なんでもないよ、/マカロニえんぴつ、ドライフラワー/優里</h6>
+                <p>表現力が重要！</p>
+        
+                <% elsif @cat.question == "2322" %>
+                <h6>水平線/backnumber</h6>
+                <p>テンポがゆっくりなので歌いやすいです！</p>
+
+                <% end %>
+
+        </div>

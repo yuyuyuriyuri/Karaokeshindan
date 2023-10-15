@@ -1,0 +1,70 @@
+<%= form_for(@cat, class: 'form-horizontal', role: 'form') do |f| %>
+    <div class="container-sindan">
+        <div class="row">
+            <div class="col-4">
+                <h2>簡単！カラオケ診断</h2>
+                <h6>場の雰囲気にあった曲～編～</h6>
+                <h4>全部で4問です。</h4>
+            </div>
+
+
+            <div class="col-1">
+                <div class="col-5">
+                    <div class="col-11">
+                        <p>Q1.<br> 最新曲よりもロングセラー曲の方が好みだ</p>
+                    </div>
+                    <div class="col-8">
+                        <p><%= f.check_box :question, {multiple: true}, "1", nil %>はい、ロングセラー曲が好き</p>
+                    </div>
+                    <div class="col-8">
+                        <p><%= f.check_box :question, {multiple: true}, "2", nil %>いいえ、最新曲が好き</p>
+                    </div>
+                </div> 
+
+            <div class="col-5">
+                <div class="col-11">
+                    <p>Q2.<br> "ドレミファソラシ"で出しやすいのはどの音ですか？</p>
+                </div>
+                <div class="col-8">
+                    <p><%= f.check_box :question, {multiple: true}, "1", nil %>ドレ</p>
+                </div>
+                <div class="col-8">
+                    <p><%= f.check_box :question, {multiple: true}, "2", nil %>ミファソ</p>
+                </div>
+                <div class="col-8">
+                    <p><%= f.check_box :question, {multiple: true}, "３", nil %>ラシ</p>
+                </div>
+            </div>  
+
+            <div class="col-5">
+                <div class="col-11">
+                    <p>Q3.<br> リズム感はありますか？</p>
+                </div>
+                <div class="col-8">
+                    <p><%= f.check_box :question, {multiple: true}, "1", nil %>自信あり！</p>
+                </div>
+                <div class="col-8">
+                    <p><%= f.check_box :question, {multiple: true}, "2", nil %>苦手意識あり…</p>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="col-11">
+                    <p>Q4. <br>人前で歌うことは好きですか？</p>
+                </div>
+                <div class="col-8">
+                    <p><%= f.check_box :question, {multiple: true}, "1", nil %>好き！思い切って歌える！</p>
+                </div>
+                <div class="col-8">
+                    <p><%= f.check_box :question, {multiple: true}, "2", nil %>苦手…</p>
+                </div>
+            </div>
+        </div>
+
+            <div class="sindanbotan">
+                <%= f.submit "post" %>
+            </div>
+        </div>
+    </div>
+
+<% end %>
